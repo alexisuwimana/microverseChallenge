@@ -1,0 +1,36 @@
+.margin-50 {
+    margin-right: 50px;
+}
+
+.bg-red {
+   background-color:  #be3144;
+}
+
+.bg-gray-800 {
+   background-color:  #222224;
+}
+
+.navbar-fixed-top {
+    position: sticky;
+    top: 0;
+}
+
+.bg-navy-blue {
+    background-color: #45567d;
+}
+
+.padding-t-100 {
+    padding-top: 100px;
+}
+
+.padding-b-50 {
+    padding-bottom: 50px;
+}
+
+.padding-t-50 {
+    padding-top: 50px;
+}
+
+.margin-r-25 {
+    margin-right: 25px;
+}
