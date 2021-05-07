@@ -16,22 +16,136 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <section id="welcome-section">
-      <h1>Hey I am a developer</h1>
-    </section>
-    <section id="projects">
-      <div class="project-tile">
-        These are some of my projects
 
-        <a href="/">A Project</a>
+    <nav
+      class="navbar navbar-expand-lg bg-red text-white border-bottom border-dark navbar-fixed-top w-100"
+      id="navbar"
+    >
+      <div class="collapse navbar-collapse w-100" id="navbarTogglerDemo03">
+        <ul
+          class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex justify-content-end w-100 margin-50"
+        >
+          <li class="nav-item active">
+            <button class="nav-link btn p-2" href="#" onclick="goto()">
+              PROJECTS
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn p-2" href="#">WORK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn p-2" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      id="welcome-section"
+      class="d-flex flex-column bg-gray-800 min-vh-100 m-auto justify-content-center"
+    >
+      <div class="d-flex flex-column justify-content-center">
+        <h1 class="text-center w-100 text-white">Hey I am a developer</h1>
+        <a
+          href="https://github.com/alexisuwimana/microverseChallenge"
+          id="profile-link"
+          class="text-center text-danger"
+          target="_blank"
+          >my GitHub</a
+        >
+      </div>
+    </section>
+    <section id="projects" class="bg-navy-blue">
+      <h2 class="text-white text-center padding-t-100">
+        There are some of my projects
+      </h2>
+      <div class="project-tile d-flex flex-row py-5">
+        <div class="container">
+          <div class="row justify-items-center">
+            <div class="col-sm">
+              <div class="image">
+                <img src="./img/tribute.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="footer bg-dark">
+                <p class="text-center text-white p-2">Tribute Page</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="image">
+                <img src="./img/tribute.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="footer bg-dark">
+                <p class="text-center text-white p-2">Tribute Page</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="image">
+                <img src="./img/tribute.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="footer bg-dark">
+                <p class="text-center text-white p-2">Tribute Page</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="image">
+                <img src="./img/tribute.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="footer bg-dark">
+                <p class="text-center text-white p-2">Tribute Page</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="image">
+                <img src="./img/tribute.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="footer bg-dark">
+                <p class="text-center text-white p-2">Tribute Page</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="image">
+                <img src="./img/tribute.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="footer bg-dark">
+                <p class="text-center text-white p-2">Tribute Page</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-3 padding-b-50">
+            <a class="btn btn-dark btn-lg" href="#">Show All</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <nav id="navbar">
-      <a href="#"></a>
-      <a href="https://github.com/alexisuwimana/microverseChallenge" id="profile-link">my GitHub</a>
-    </nav>
-    
+    <section
+      id="footer"
+      class="d-flex align-items-center bg-dark padding-b-50 padding-t-50 flex-column"
+    >
+      <div class="d-flex flex-column align-items-center">
+        <h3 class="text-white">Let's work together...</h3>
+        <p class="text-white">How do you take your coffee?</p>
+      </div>
+      <div class="links row text-white">
+        <div class="col margin-r-25">
+          link1
+        </div>
+        <div class="col margin-r-25">
+          link1
+        </div>
+        <div class="col margin-r-25">
+          link1
+        </div>
+        <div class="col margin-r-25">
+          link1
+        </div>
+        <div class="col margin-r-25">
+          link1
+        </div>
+      </div>
+    </section>
+
+    <nav id="navbar"></nav>
 
     <!--
 
@@ -46,5 +160,16 @@
 
     -->
     <script src="js/index.js"></script>
+    <script>
+      function goto() {
+        console.log("here");
+        var element = document.getElementById("projects");
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "nearest",
+        });
+      }
+    </script>
   </body>
 </html>
